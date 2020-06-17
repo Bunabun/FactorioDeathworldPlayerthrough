@@ -17,7 +17,13 @@ git pull origin master
 
 As help, the directory saves, along with other factorio items, are ignored by git. Simply copy the save file to commit, edit the time to match the save's time, and commit with a message.
 
-# How to branch and push
+# How to branch master and push
+To branch off of master first fetch and pull
+```
+git fetch
+git checkout master
+git pull origin master
+```
 Create a new branch and checkout afterwards. 
 ```
 git checkout -b your-branch
@@ -36,3 +42,21 @@ git push
 ```
 Lastly a tip, keep everything to fast-forwards in both realtime and gametime. Merge conflicts are hard enough with human readable text.
 In other words, don't try and be a time traveler and rewrite history that's where ~paradoxes~ conflicts happen.
+
+# How to branch off of a branch and push
+The same above but replace the branch master with the branch you want to base off of.
+```
+git fetch
+git checkout remote-branch
+git pull origin remote-branch
+```
+Then checkout like before and do the basic.
+```
+git checkout -b your-branch
+// save and edit save.js, etc.
+git add .
+git commit
+// once all finished
+git push
+```
+You should be able to select either the master branch or the remote branch for the pull request.
