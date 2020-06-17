@@ -5,7 +5,7 @@ var args = process.argv.slice(2);
 if (args[0] === "test") {
     console.log("testing.");
     var masterTime = readFileSync('./time/time.file', "utf8" );
-    if (masterTime > save.time){
+    if (masterTime >= save.time){
         throw Error("Game time for master is " + masterTime +". The game time for master should always be behind the game time for the pull request.");
     }
 } else if (args[0] === "fetch") {
