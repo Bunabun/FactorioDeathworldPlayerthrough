@@ -28,7 +28,7 @@ git add .
 ```
 And then commit and add a message describing what happened.
 ```
-git commit -c
+git commit
 ```
 lastly push and start a merge request.
 ```
