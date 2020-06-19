@@ -8,14 +8,14 @@ These restrictions are it for the time being. They only apply to the master bran
 
 # How to clone
 Knowing how to use git is a worthy skill here, but here are the basics.
-The easiest way to start is to cd to `\AppData\Roaming\Factorio\` or where ever your saves are located and run these git commands.
+The easiest way to start is to cd to `\AppData\Roaming\Factorio\saves` or where ever your saves are located and run these git commands.
 ```
 git init
 git remote add origin https://github.com/ErenForce/FactorioDeathworldPlayerthrough.git
 git pull origin master
 ```
 
-As help, the directory saves, along with other factorio items, are ignored by git. Simply copy the save file to commit, edit the time to match the save's time, and commit with a message.
+As help, the directory includes common factorio related items that git will ignore.
 
 # How to branch master and push
 To branch off of master first fetch and pull
