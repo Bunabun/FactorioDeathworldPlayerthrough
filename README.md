@@ -24,11 +24,11 @@ git fetch
 git checkout master
 git pull origin master
 ```
-Create a new branch and checkout afterwards. 
+This allows you to play, however before saving you must create a branch first. To create a new branch and switch to it afterwards. 
 ```
 git checkout -b your-branch
 ```
-Load the save and do something. Copy it out of `saves/` and up to the git dir, then make sure to update the time in `save.js`. To get the files ready to commit.
+Once finished save something. Then make sure to update the time in `save.js` or the commit will fail merges. To get the files ready to commit.
 ```
 git add .
 ```
