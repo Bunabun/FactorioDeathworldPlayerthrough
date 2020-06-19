@@ -8,27 +8,33 @@ These restrictions are it for the time being. They only apply to the master bran
 
 # How to clone
 Knowing how to use git is a worthy skill here, but here are the basics.
-The easiest way to start is to cd to `\AppData\Roaming\Factorio\` or where ever your saves are located and run these git commands.
+The easiest way to start is to cd to `\AppData\Roaming\Factorio\saves` or where ever your saves are located and run these git commands.
 ```
 git init
 git remote add origin https://github.com/ErenForce/FactorioDeathworldPlayerthrough.git
 git pull origin master
 ```
 
-As help, the directory saves, along with other factorio items, are ignored by git. Simply copy the save file to commit, edit the time to match the save's time, and commit with a message.
+As help, the directory includes common factorio related items that git will ignore.
 
-# How to branch and push
-Create a new branch and checkout afterwards. 
+# How to branch master and push
+To branch off of master first fetch and pull
+```
+git fetch
+git checkout master
+git pull origin master
+```
+This allows you to play, however before saving you must create a branch first. To create a new branch and switch to it afterwards. 
 ```
 git checkout -b your-branch
 ```
-Load the save and do something. Copy it out of `saves/` and up to the git dir, then make sure to update the time in `save.js`. To get the files ready to commit.
+Once finished save something. Then make sure to update the time in `save.js` or the commit will fail merges. To get the files ready to commit.
 ```
 git add .
 ```
 And then commit and add a message describing what happened.
 ```
-git commit -c
+git commit
 ```
 lastly push and start a merge request.
 ```
@@ -36,3 +42,21 @@ git push
 ```
 Lastly a tip, keep everything to fast-forwards in both realtime and gametime. Merge conflicts are hard enough with human readable text.
 In other words, don't try and be a time traveler and rewrite history that's where ~paradoxes~ conflicts happen.
+
+# How to branch off of a branch and push
+The same above but replace the branch master with the branch you want to base off of.
+```
+git fetch
+git checkout remote-branch
+git pull origin remote-branch
+```
+Then checkout like before and do the basic.
+```
+git checkout -b your-branch
+// save and edit save.js, etc.
+git add .
+git commit
+// once all finished
+git push
+```
+You should be able to select either the master branch or the remote branch for the pull request.
