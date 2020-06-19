@@ -1,3 +1,6 @@
+*.zip
+!master.zip
+
 factorio-current.log
 player-data.json
 crop-cache.dat
@@ -12,6 +15,7 @@ blueprint-storage-version-0.18-backup.dat
 blueprint-storage-version-0.19-backup.dat
 server-id.json
 
+node_modules/
 saves/
 temp/
 mods/
