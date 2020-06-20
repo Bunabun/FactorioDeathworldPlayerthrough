@@ -2,9 +2,11 @@
 An open sourced community powered playthrough of Factorio's deathworld preset.
 
 # How to participate
+To be added as a contributor you can reach me either through email at `ericforce06@gmail.com` or by discord at `Cinna Bun#8505`. Otherwise you can fork and make pull requests to master.
+
 We use a strict workflow to insure that no conflics occur on the master branch. This keeps a consistant save history with each commit. The branch is protected and to change it pull requests from branches or forks must be used. In addition the pull request cannot be behind in game time and as a quick check in order for the pull request to pass `save.js` must be changed to export a later time. It should reflect the save file's game time. Lastly the save name in master should be kept as master for consistency.
 
-These restrictions are it for the time being. They only apply to the master branch. Everything else is unrestricted.
+These restrictions are it for the time being. They only apply to the master branch in this repo.
 
 # How to clone
 Knowing how to use git is a worthy skill here, but here are the basics.
