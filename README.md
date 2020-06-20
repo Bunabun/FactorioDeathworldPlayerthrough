@@ -13,18 +13,28 @@ Knowing how to use git is a worthy skill here, but here are the basics.
 The easiest way to start is to cd to `\AppData\Roaming\Factorio\saves` or where ever your saves are located and run these git commands.
 ```
 git init
+git remote add upstream https://github.com/ErenForce/FactorioDeathworldPlayerthrough.git
+
+// if you're a contributor
 git remote add origin https://github.com/ErenForce/FactorioDeathworldPlayerthrough.git
-git pull origin master
+
+// if you forked
+git remote add origin https://github.com/yourusername/FactorioDeathworldPlayerthrough.git
+
+git fetch upstream
+
+git pull
+// more information https://stackoverflow.com/a/9257901
 ```
 
 As help, the directory includes common factorio related items that git will ignore.
 
 # How to branch master and push
-To branch off of master first fetch and pull
+To branch off of master first fetch and merge if needed
 ```
-git fetch
+git fetch upstream
 git checkout master
-git pull origin master
+git merge master
 ```
 This allows you to play, however before saving you must create a branch first. To create a new branch and switch to it afterwards. 
 ```
