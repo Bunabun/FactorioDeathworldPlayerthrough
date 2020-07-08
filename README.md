@@ -69,6 +69,6 @@ git checkout -b your-branch
 git add .
 git commit
 // once all finished
-git push
+git push origin your-branch
 ```
 You should be able to select either the master branch or the remote branch for the pull request.
