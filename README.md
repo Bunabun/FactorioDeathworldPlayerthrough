@@ -32,9 +32,9 @@ As help, the directory includes common factorio related items that git will igno
 # How to branch master and push
 To branch off of master first fetch and merge if needed
 ```
-git fetch upstream
 git checkout master
-git merge master
+git fetch upstream
+git merge upstream/master
 ```
 This allows you to play, however before saving you must create a branch first. To create a new branch and switch to it afterwards. 
 ```
