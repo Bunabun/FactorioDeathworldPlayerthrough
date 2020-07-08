@@ -1,3 +1,3 @@
 export default {
-    time: "02:32:39"
+    time: "03:25:00"
 }
